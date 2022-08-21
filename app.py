@@ -150,11 +150,10 @@ def index():
 
 @app.route('/venues')
 def venues():
-    # TODO: replace with real venues data.
     # data = Venue.query.all()
     # return render_template('pages/venues.html', areas=data);
+
     venue_groups = db.session.query(Venue.city, Venue.state).group_by(Venue.city, Venue.state).all()
-    print(venue_groups)
     result = []
     # Grouping venues by city and state
     for venue_group in venue_groups:
@@ -175,6 +174,7 @@ def venues():
                 "name": venue.name,
             })
         result.append(group)
+
     return render_template('pages/venues.html', areas=result)
 
 
@@ -265,15 +265,8 @@ def delete_venue(venue_id):
 #  ----------------------------------------------------------------
 @app.route('/artists')
 def artists():
-    data = db.session.query(Artist).all()
-    result = []
-    for artist in data:
-        result.append({
-            "id": artist.id,
-            "name": artist.name
-        })
-    return render_template('pages/artists.html', artists=data)
-
+    artist = Artist.query.order_by(Artist.id.name).all()
+    return render_template('pages/artists.html', artists=artist)
 
 @app.route('/artists/search', methods=['POST'])
 def search_artists():

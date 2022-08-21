@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d09df79-c2db-4ca8-b188-bf3fc00ed88d" name="Changes" comment="done with some functions and left with some">
+      <change afterPath="$PROJECT_DIR$/../Udacity/fullstack" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Udacity/nanodegree/todo/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Udacity/nanodegree/todoapp/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Udacity/nanodegree/todoapp/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
@@ -20,18 +21,8 @@
       <change afterPath="$PROJECT_DIR$/../Udacity/nanodegree/todoapp/migrations/versions/2ed78ea8940c_.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Udacity/nanodegree/todoapp/migrations/versions/54a8399236f1_.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Udacity/nanodegree/todoapp/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/fyyur.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/alembic.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/script.py.mako" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/2192a7dbed14_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/3585d66acbcb_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/d15e5e014b41_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../devTools" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flask/flask" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pythonProjects/qrCode/qrcode.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../tutorials/Django/mysite/manage.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../tutorials/Django/mysite/mysite/__init__.py" afterDir="false" />
@@ -59,16 +50,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/phil/Git/fyyur",
-    "settings.editor.selected.configurable": "project.propDebugger"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/phil/Git/fyyur&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propDebugger&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.app">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="fyyur" />
@@ -139,5 +130,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app.py</url>
+          <line>219</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
