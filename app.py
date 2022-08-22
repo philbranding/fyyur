@@ -152,30 +152,9 @@ def index():
 def venues():
     # data = Venue.query.all()
     # return render_template('pages/venues.html', areas=data);
-
-    venue_groups = db.session.query(Venue.city, Venue.state).group_by(Venue.city, Venue.state).all()
-    result = []
-    # Grouping venues by city and state
-    for venue_group in venue_groups:
-        city_name = venue_group[0]
-        city_state = venue_group[1]
-        q = db.session.query(Venue).filter(Venue.city == city_name, Venue.state == city_state)
-        group = {
-            "city": city_name,
-            "state": city_state,
-            "venues": []
-        }
-        all_venues = q.all()
-        # Listing venues in the city/state group
-        for venue in all_venues:
-            print(venue.id)
-            group['venues'].append({
-                "id": venue.id,
-                "name": venue.name,
-            })
-        result.append(group)
-
-    return render_template('pages/venues.html', areas=result)
+    distinct_grouping = Venue.query.distinct(Venue.city, Venue.state).all()
+    for venue in distinct_grouping:
+        return render_template('pages/venues.html', areas=distinct_grouping)
 
 
 @app.route('/venues/search', methods=['POST'])
